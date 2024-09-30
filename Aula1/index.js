@@ -9,7 +9,6 @@ app.get('/users/:id', (req, res) => { //get=retorna um valor
     const id = req.params.id //resgatar parametros da url
     console.log(`Estamos buscando o usuario: ${id}`) //resgatar o usuario do banco
     res.sendFile(`${basepath}/users.html`)//sendFile=Transferir arquivos. basepath=especifica a pasta raiz.
-    
 })
 
 app.get('/', (req, res) => {
