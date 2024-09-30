@@ -33,11 +33,11 @@ var checkAuth = function (req, res, next) {
     app.post('/users/save', (req, res) =>{
         console.log(req.body)
         const name = req.body.name
-        const age = req.body.age
+        const email = req.body.email
 
 
         console.log(name)
-        console.log(age)
+        console.log(email)
     })
 
     app.get('/users/add', (req, res) => { //get=retorna um valor
