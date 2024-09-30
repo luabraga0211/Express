@@ -30,6 +30,15 @@ var checkAuth = function (req, res, next) {
     app.get('users/add', (req, res) =>{
         res.sendFile(`${basePath}/form.html`)
     })
+    app.post('/users/save', (req, res) =>{
+        console.log(req.body)
+        const name = req.body.name
+        const email = req.body.email
+
+
+        console.log(name)
+        console.log(email)
+    })
 
     app.get('/users/:id', (req, res) => { //get=retorna um valor
     const id = req.params.id //resgatar parametros da url
