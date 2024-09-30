@@ -33,16 +33,16 @@ var checkAuth = function (req, res, next) {
     app.post('/users/save', (req, res) =>{
         console.log(req.body)
         const name = req.body.name
-        const email = req.body.email
+        const age = req.body.age
 
 
         console.log(name)
-        console.log(email)
+        console.log(age)
     })
 
-    app.get('/users/:id', (req, res) => { //get=retorna um valor
-    const id = req.params.id //resgatar parametros da url
-    console.log(`Estamos buscando o usuario: ${id}`) //resgatar o usuario do banco
+    app.get('/users/add', (req, res) => { //get=retorna um valor
+    const add = req.params.add //resgatar parametros da url
+    console.log(`Estamos buscando o usuario: ${add}`) //resgatar o usuario do banco
     res.sendFile(`${basepath}/users.html`)//sendFile=Transferir arquivos. basepath=especifica a pasta raiz.
 })
 
