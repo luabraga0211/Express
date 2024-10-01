@@ -43,7 +43,7 @@ var checkAuth = function (req, res, next) {
     router.get('/:add', (req, res) => { //get=retorna um valor
     const add = req.params.add //resgatar parametros da url
     console.log(`Estamos buscando o usuario: ${add}`) //resgatar o usuario do banco
-    res.sendFile(`${basepath}/form.html`)//sendFile=Transferir arquivos. basepath=especifica a pasta raiz.
+    res.sendFile(`${basePath}/users.html`)//sendFile=Transferir arquivos. basepath=especifica a pasta raiz.
 })
 
 module.exports = router //exportando o modulo do router no codigo

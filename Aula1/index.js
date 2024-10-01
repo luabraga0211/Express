@@ -3,7 +3,7 @@ const app = express()
 const port = 3000  //Variavel ambiente
 
 const path = require("path")
-const users = require('/users')
+const users = require('./users')
 
 const basepath = path.join(__dirname) 
 
