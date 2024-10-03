@@ -14,6 +14,9 @@ const basePath = path.join(__dirname)
 
 router.use(express.json())
 
+//Aplica Estética (css)
+router.use(express.static('public'))
+
 var checkAuth = function (req, res, next) {
     req.authStatus = true
 
