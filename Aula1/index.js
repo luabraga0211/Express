@@ -10,7 +10,7 @@ const basepath = path.join(__dirname)
 app.use('/users', users)
 
 app.get('/', (req, res) => {
-    res.sendFile(`${basepath}/index.html`)
+    res.sendFile(`${basepath}/users/form.html`)
 })
 
 app.listen(port, () => {
